@@ -9,3 +9,5 @@ README.html
 .travis.yml
 experimental
 test.log$
+^.*\.Rproj$
+^\.Rproj\.user$
