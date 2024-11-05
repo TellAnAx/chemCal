@@ -11,11 +11,11 @@ calculate_result(calibration, signal, df = 1, wf = 1, vf = 1)
 
 \item{signal}{numeric value}
 
-\item{df}{numeric factor}
+\item{df}{numeric value}
 
-\item{wf}{numeric factor}
+\item{wf}{numeric value}
 
-\item{vf}{numeric factor}
+\item{vf}{numeric value}
 }
 \value{
 numeric value
