@@ -3,8 +3,8 @@
 #' Function to calculate the repeatability
 #' 
 #' @param signal numeric vector containing the signal values
-#' @details
-#' Additional details...
+#' 
+#' @importFrom stats sd
 #' 
 #' @export 
 repeatability <- function(signal) {

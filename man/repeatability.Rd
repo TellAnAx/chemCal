@@ -12,6 +12,3 @@ repeatability(signal)
 \description{
 Function to calculate the repeatability
 }
-\details{
-Additional details...
-}
