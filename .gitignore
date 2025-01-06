@@ -1,5 +1,9 @@
+chemCal2.Rproj
 chemCal.Rcheck
 chemCal_*.tar.gz
 experimental
 .Rproj.user
 .Rhistory
+
+# MacOS
+.DS_Store
