@@ -2,3 +2,5 @@ chemCal.Rcheck
 chemCal_*.tar.gz
 experimental
 .Rproj.user
+.Rhistory
+*.Rproj

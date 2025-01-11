@@ -9,5 +9,7 @@ README.html
 .travis.yml
 experimental
 test.log$
+^codecov\.yml$
+^\.github$
 ^.*\.Rproj$
 ^\.Rproj\.user$
