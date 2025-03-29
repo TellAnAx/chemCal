@@ -4,23 +4,41 @@
 \alias{calculate_result}
 \title{Calculate quantitative results}
 \usage{
-calculate_result(calibration, signal, df = 1, wf = 1, vf = 1)
+calculate_result(sig, cal, df = 1, vf = 1, wf = 1)
 }
 \arguments{
-\item{calibration}{object}
+\item{cal}{object}
 
-\item{signal}{numeric value}
+\item{df}{numeric; dimensionless dilution factor. Calculated by dividing
+the total volume after fill-up with solvent by the volume of the sample aliquot.}
 
-\item{df}{numeric value}
+\item{vf}{numeric; total volume of the sample}
 
-\item{wf}{numeric value}
+\item{wf}{numeric; weight}
 
-\item{vf}{numeric value}
+\item{signal}{numeric}
 }
 \value{
-numeric value
+numeric; the concentration calculated by plugging in the signal value
+into the provided calibration function
 }
 \description{
 Calculate the concentration or other things based on the signal of an
 analytical device and a calibration.
+}
+\examples{
+# fit model
+data(massart97ex3)
+m <- lm(y ~ x, data = massart97ex3)
+
+# create example data
+measured <- tibble::tribble(
+~y,
+1,
+2,
+3
+)
+
+calculate_result(measured$y, m)
+
 }
